@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "Envelope"
+Date "2021-08-06"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4000 3500 0    50   Input ~ 0
+audio
+$Comp
+L generic:OpAmp IC?
+U 1 1 610D82D8
+P 5400 3600
+AR Path="/610D71B2/610D82D8" Ref="IC?"  Part="1" 
+AR Path="/610D7A47/610D82D8" Ref="IC?"  Part="1" 
+F 0 "IC?" H 5400 3823 50  0000 C CNN
+F 1 "OpAmp" H 5400 3900 50  0001 C CNN
+F 2 "" H 5400 3600 50  0001 C CNN
+F 3 "" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	1    0    0    -1  
+$EndComp
+Text HLabel 6400 3600 2    50   Output ~ 0
+envelope
+$Comp
+L generic:R R?
+U 1 1 610D9876
+P 6000 4200
+AR Path="/610D71B2/610D9876" Ref="R?"  Part="1" 
+AR Path="/610D7A47/610D9876" Ref="R?"  Part="1" 
+F 0 "R?" V 5954 4253 50  0000 L CNN
+F 1 "1K" V 6045 4253 50  0000 L CNN
+F 2 "SMT:0603" H 5900 4175 50  0001 C CNN
+F 3 "" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L generic:R R?
+U 1 1 610D99FA
+P 5000 3500
+AR Path="/610D71B2/610D99FA" Ref="R?"  Part="1" 
+AR Path="/610D7A47/610D99FA" Ref="R?"  Part="1" 
+F 0 "R?" H 5000 3690 50  0000 C CNN
+F 1 "100K" H 5000 3599 50  0000 C CNN
+F 2 "SMT:0603" H 4900 3475 50  0001 C CNN
+F 3 "" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L generic:C C?
+U 1 1 610D9DD6
+P 6300 4000
+AR Path="/610D71B2/610D9DD6" Ref="C?"  Part="1" 
+AR Path="/610D7A47/610D9DD6" Ref="C?"  Part="1" 
+F 0 "C?" H 6222 3954 50  0000 R CNN
+F 1 "1nF" H 6222 4045 50  0000 R CNN
+F 2 "SMT:0603" H 6300 3900 50  0001 C CNN
+F 3 "" H 6300 4000 50  0001 C CNN
+	1    6300 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L generic:D D?
+U 1 1 610D9FFF
+P 5800 3600
+AR Path="/610D71B2/610D9FFF" Ref="D?"  Part="1" 
+AR Path="/610D7A47/610D9FFF" Ref="D?"  Part="1" 
+F 0 "D?" H 5800 3723 50  0000 C CNN
+F 1 "D" H 5800 3500 50  0001 C CNN
+F 2 "SMT:0603" H 5810 3600 50  0001 C CNN
+F 3 "" H 5810 3600 50  0001 C CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3700 5200 3700
+Wire Wire Line
+	5200 3500 5100 3500
+$Comp
+L generic:C C?
+U 1 1 610E0880
+P 4300 3500
+AR Path="/610D71B2/610E0880" Ref="C?"  Part="1" 
+AR Path="/610D7A47/610E0880" Ref="C?"  Part="1" 
+F 0 "C?" V 4177 3500 50  0000 C CNN
+F 1 "C" H 4400 3400 50  0001 C CNN
+F 2 "SMT:0603" H 4300 3400 50  0001 C CNN
+F 3 "" H 4300 3500 50  0001 C CNN
+	1    4300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3500 4600 3500
+Wire Wire Line
+	4200 3500 4000 3500
+$Comp
+L generic:R R?
+U 1 1 610E30A5
+P 4600 4000
+AR Path="/610D71B2/610E30A5" Ref="R?"  Part="1" 
+AR Path="/610D7A47/610E30A5" Ref="R?"  Part="1" 
+F 0 "R?" V 4554 4053 50  0000 L CNN
+F 1 "100K" V 4645 4053 50  0000 L CNN
+F 2 "SMT:0603" H 4500 3975 50  0001 C CNN
+F 3 "" H 4600 4000 50  0001 C CNN
+	1    4600 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L generic:GND GND?
+U 1 1 610E3495
+P 4600 4400
+AR Path="/610D71B2/610E3495" Ref="GND?"  Part="1" 
+AR Path="/610D7A47/610E3495" Ref="GND?"  Part="1" 
+F 0 "GND?" H 4750 4450 50  0001 C CNN
+F 1 "GND" H 4750 4400 50  0001 C CNN
+F 2 "" H 4600 4400 50  0001 C CNN
+F 3 "" H 4600 4400 50  0001 C CNN
+	1    4600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4400 4600 4100
+Wire Wire Line
+	4600 3900 4600 3500
+Connection ~ 4600 3500
+$Comp
+L generic:GND GND?
+U 1 1 610EF6DD
+P 6000 4400
+AR Path="/610D71B2/610EF6DD" Ref="GND?"  Part="1" 
+AR Path="/610D7A47/610EF6DD" Ref="GND?"  Part="1" 
+F 0 "GND?" H 6150 4450 50  0001 C CNN
+F 1 "GND" H 6150 4400 50  0001 C CNN
+F 2 "" H 6000 4400 50  0001 C CNN
+F 3 "" H 6000 4400 50  0001 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L generic:R R?
+U 1 1 610EF8FF
+P 6000 3800
+AR Path="/610D71B2/610EF8FF" Ref="R?"  Part="1" 
+AR Path="/610D7A47/610EF8FF" Ref="R?"  Part="1" 
+F 0 "R?" V 5954 3853 50  0000 L CNN
+F 1 "1K" V 6045 3853 50  0000 L CNN
+F 2 "SMT:0603" H 5900 3775 50  0001 C CNN
+F 3 "" H 6000 3800 50  0001 C CNN
+	1    6000 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3600 5700 3600
+Wire Wire Line
+	5900 3600 6000 3600
+Wire Wire Line
+	6000 3600 6000 3700
+Wire Wire Line
+	6000 3900 6000 4000
+Wire Wire Line
+	6000 4000 5100 4000
+Wire Wire Line
+	5100 3700 5100 4000
+Connection ~ 6000 4000
+Wire Wire Line
+	6000 4000 6000 4100
+Wire Wire Line
+	6000 4300 6000 4400
+$Comp
+L generic:GND GND?
+U 1 1 610F5B5C
+P 6300 4400
+AR Path="/610D71B2/610F5B5C" Ref="GND?"  Part="1" 
+AR Path="/610D7A47/610F5B5C" Ref="GND?"  Part="1" 
+F 0 "GND?" H 6450 4450 50  0001 C CNN
+F 1 "GND" H 6450 4400 50  0001 C CNN
+F 2 "" H 6300 4400 50  0001 C CNN
+F 3 "" H 6300 4400 50  0001 C CNN
+	1    6300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4100 6300 4400
+Wire Wire Line
+	6300 3900 6300 3600
+Wire Wire Line
+	6300 3600 6000 3600
+Connection ~ 6000 3600
+Wire Wire Line
+	4600 3500 4900 3500
+Wire Wire Line
+	6400 3600 6300 3600
+Connection ~ 6300 3600
+$EndSCHEMATC

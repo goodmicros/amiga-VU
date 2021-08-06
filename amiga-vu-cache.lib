@@ -1,0 +1,126 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# generic_5V
+#
+DEF generic_5V 5V 0 0 N N 1 F P
+F0 "5V" 150 50 50 H I C CNN
+F1 "generic_5V" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -50 50 0 100 50 50 0 50 N
+X GND ~ 0 0 100 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# generic_C
+#
+DEF generic_C C 0 0 N N 1 F N
+F0 "C" 100 0 50 H V C CNN
+F1 "generic_C" 100 -100 50 H I C CNN
+F2 "SMT:0603" 0 -100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 -10 50 -10 N
+P 2 0 1 0 50 10 -50 10 N
+X ~ 1 0 100 91 D 50 50 1 1 B
+X ~ 2 0 -100 91 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# generic_D
+#
+DEF generic_D D 0 0 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "generic_D" 0 -100 50 H I C CNN
+F2 "SMT:0603" 10 0 50 H I C CNN
+F3 "" 10 0 50 H I C CNN
+DRAW
+P 2 0 1 0 50 50 50 -50 N
+P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 N
+X A 1 -100 0 50 R 50 50 1 1 I
+X K 2 100 0 50 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# generic_GND
+#
+DEF generic_GND GND 0 0 N N 1 F P
+F0 "GND" 150 50 50 H I C CNN
+F1 "generic_GND" 150 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 -50 50 -50 N
+P 2 0 1 0 0 -100 0 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 25 -75 -25 -75 N
+X GND ~ 0 0 100 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# generic_OpAmp
+#
+DEF generic_OpAmp IC 0 40 N Y 1 F N
+F0 "IC" 0 200 50 H V C CNN
+F1 "generic_OpAmp" 0 300 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -125 -75 -75 -75 N
+P 2 0 1 0 -100 100 -100 50 N
+P 3 0 1 0 -125 75 -100 75 -75 75 N
+P 4 0 1 0 150 0 -150 150 -150 -150 150 0 f
+X ~ ~ -200 -100 50 R 50 50 1 1 I
+X ~ ~ -200 100 50 R 50 50 1 1 I
+X ~ ~ 200 0 50 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# generic_R
+#
+DEF generic_R R 0 0 N N 1 F N
+F0 "R" 0 75 50 H V C CNN
+F1 "generic_R" 0 -100 50 H I C CNN
+F2 "SMT:0603" -100 -25 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 25 50 -25 0 1 0 f
+X ~ 1 -100 0 50 R 50 50 1 1 B
+X ~ 2 100 0 50 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# pin_headers_1x3
+#
+DEF pin_headers_1x3 CN 0 40 Y Y 1 F N
+F0 "CN" 100 200 50 H V C CNN
+F1 "pin_headers_1x3" 0 200 50 H I C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+DRAW
+S 100 150 200 -150 0 1 0 f
+X ~ 1 0 100 100 R 50 50 1 1 B
+X ~ 2 0 0 100 R 50 50 1 1 B
+X ~ 3 0 -100 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# pin_headers_1x4
+#
+DEF pin_headers_1x4 CN 0 40 Y Y 1 F N
+F0 "CN" 100 300 50 H V C CNN
+F1 "pin_headers_1x4" 0 300 50 H I C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 100 250 200 -150 0 1 0 f
+X ~ 1 0 200 100 R 50 50 1 1 B
+X ~ 2 0 100 100 R 50 50 1 1 B
+X ~ 3 0 0 100 R 50 50 1 1 B
+X ~ 4 0 -100 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

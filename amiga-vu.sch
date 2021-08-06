@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "Amiga VU light strip driver"
+Date "2021-08-06"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4200 4000 4300 4000
+Text Label 4300 3900 0    50   ~ 0
+right
+Text Label 4300 3800 0    50   ~ 0
+left
+$Comp
+L pin_headers:1x4 CN?
+U 1 1 610D3DBD
+P 4200 3800
+F 0 "CN?" H 4292 3577 50  0000 C CNN
+F 1 "1x4" H 4200 4100 50  0001 C CNN
+F 2 "" H 4200 4000 50  0001 C CNN
+F 3 "" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L generic:5V 5V?
+U 1 1 610D4351
+P 4300 3600
+F 0 "5V?" H 4450 3650 50  0001 C CNN
+F 1 "5V" H 4378 3643 50  0000 L CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3700 4300 3700
+Wire Wire Line
+	4300 3700 4300 3600
+Wire Wire Line
+	4300 4000 4300 4100
+$Comp
+L generic:GND GND?
+U 1 1 610D2F65
+P 4300 4100
+F 0 "GND?" H 4450 4150 50  0001 C CNN
+F 1 "GND" H 4450 4100 50  0001 C CNN
+F 2 "" H 4300 4100 50  0001 C CNN
+F 3 "" H 4300 4100 50  0001 C CNN
+	1    4300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L generic:C C?
+U 1 1 610D5F5E
+P 4100 3000
+F 0 "C?" H 4178 3046 50  0000 L CNN
+F 1 "10 uF" H 4178 2955 50  0000 L CNN
+F 2 "SMT:0603" H 4100 2900 50  0001 C CNN
+F 3 "" H 4100 3000 50  0001 C CNN
+	1    4100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L generic:5V 5V?
+U 1 1 610D637C
+P 4100 2800
+F 0 "5V?" H 4250 2850 50  0001 C CNN
+F 1 "5V" H 4178 2843 50  0000 L CNN
+F 2 "" H 4100 2800 50  0001 C CNN
+F 3 "" H 4100 2800 50  0001 C CNN
+	1    4100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L generic:GND GND?
+U 1 1 610D6547
+P 4100 3200
+F 0 "GND?" H 4250 3250 50  0001 C CNN
+F 1 "GND" H 4250 3200 50  0001 C CNN
+F 2 "" H 4100 3200 50  0001 C CNN
+F 3 "" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3200 4100 3100
+Wire Wire Line
+	4100 2900 4100 2800
+$Sheet
+S 5200 3100 800  600 
+U 610D71B2
+F0 "Envelope-left" 50
+F1 "envelope.sch" 50
+F2 "audio" I L 5200 3400 50 
+F3 "envelope" O R 6000 3400 50 
+$EndSheet
+$Sheet
+S 5200 4000 800  600 
+U 610D7A47
+F0 "Envelope-right" 50
+F1 "envelope.sch" 50
+F2 "audio" I L 5200 4300 50 
+F3 "envelope" O R 6000 4300 50 
+$EndSheet
+Wire Wire Line
+	4700 3800 4700 3400
+Wire Wire Line
+	4700 3400 5200 3400
+Wire Wire Line
+	4200 3800 4700 3800
+Wire Wire Line
+	4700 3900 4700 4300
+Wire Wire Line
+	4700 4300 5200 4300
+Wire Wire Line
+	4200 3900 4700 3900
+$Sheet
+S 6500 3100 1100 1500
+U 610FE538
+F0 "MCU" 50
+F1 "mcu.sch" 50
+F2 "left" I L 6500 3400 50 
+F3 "right" I L 6500 4300 50 
+F4 "led-strip" O R 7600 3800 50 
+$EndSheet
+Wire Wire Line
+	6500 4300 6000 4300
+Wire Wire Line
+	6000 3400 6500 3400
+$Comp
+L pin_headers:1x3 CN?
+U 1 1 6110C851
+P 8300 3800
+F 0 "CN?" H 8392 3577 50  0000 C CNN
+F 1 "1x3" H 8300 4000 50  0001 C CNN
+F 2 "" H 8300 3900 50  0001 C CNN
+F 3 "" H 8300 3700 50  0001 C CNN
+	1    8300 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L generic:GND GND?
+U 1 1 6110CAF9
+P 8100 4000
+F 0 "GND?" H 8250 4050 50  0001 C CNN
+F 1 "GND" H 8250 4000 50  0001 C CNN
+F 2 "" H 8100 4000 50  0001 C CNN
+F 3 "" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3900 8100 3900
+Wire Wire Line
+	8100 3900 8100 4000
+Wire Wire Line
+	8300 3800 7600 3800
+$Comp
+L generic:5V 5V?
+U 1 1 6110CFED
+P 8100 3600
+F 0 "5V?" H 8250 3650 50  0001 C CNN
+F 1 "5V" H 8178 3643 50  0000 L CNN
+F 2 "" H 8100 3600 50  0001 C CNN
+F 3 "" H 8100 3600 50  0001 C CNN
+	1    8100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3700 8100 3700
+Wire Wire Line
+	8100 3700 8100 3600
+Text Notes 8600 3800 0    50   ~ 0
+to led strip
+Text Notes 3600 3900 0    50   ~ 0
+to amiga
+$EndSCHEMATC
